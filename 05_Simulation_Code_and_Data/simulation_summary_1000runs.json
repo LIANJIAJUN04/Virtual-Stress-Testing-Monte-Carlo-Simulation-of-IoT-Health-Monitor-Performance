@@ -1,0 +1,20 @@
+{
+  "total_simulations": 500,
+  "total_data_points": 2160000,
+  "environments": {
+    "Residential": {
+      "runs": 500,
+      "alert_rate": 0.040325925925925925,
+      "data_missing": 0.05001851851851852,
+      "avg_heart_rate": 71.99658737488818,
+      "avg_temperature": 36.799542844570006
+    },
+    "Controlled": {
+      "runs": 500,
+      "alert_rate": 0.013657407407407408,
+      "data_missing": 0.020141666666666665,
+      "avg_heart_rate": 71.99889501957979,
+      "avg_temperature": 36.80053509450877
+    }
+  }
+}

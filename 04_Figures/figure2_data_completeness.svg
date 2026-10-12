@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="720" height="432" viewBox="0 0 720 432">
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H709.2V405.12H60.32Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H709.2V405.12H60.32Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H709.2V405.12H60.32Z"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H709.2V405.12H60.32Z"/>
+</clipPath>
+</defs>
+<path transform="matrix(1,0,0,-1,0,432)" d="M0 0H720V432H0Z" fill="#ffffff"/>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H709.2V405.12H60.32Z" fill="#ffffff"/>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(1,0,0,-1,0,432)" d="M92.764-1410.68H352.316V369.06965H92.764Z" fill="#3274a1"/>
+</g>
+<g clip-path="url(#clip_2)">
+<path transform="matrix(1,0,0,-1,0,432)" d="M417.204-1410.68H676.756V314.0425H417.204Z" fill="#3274a1"/>
+</g>
+<path transform="matrix(1,0,0,-1,0,432)" d="M222.54 41.96V38.46"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M222.54 41.96V38.46"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 196.82906 404.63377)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.98 13.1 19.44 23.36 27.251252 33.37125 36.15125 38.931249 45.08125">Controlled</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M546.98 41.96V38.46"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M546.98 41.96V38.46"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 519.4487 404.63377)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.512501 12.6625 17.872502 20.652503 27.002503 33.152505 39.492506 43.412508 46.192506 52.322507">Residential</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 352.90846 418.30564)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.15 12.49 18.41 21.19 25.081252 31.201252 37.541254 47.281255 53.431257 59.771257">environment</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 41.96H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 41.96H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 393.83689)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">80.0</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 87.355H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 87.355H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 348.44187)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">82.5</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 132.75H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 132.75H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 303.04689)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">85.0</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 178.145H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 178.145H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 257.65187)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">87.5</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 223.54H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 223.54H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 212.25688)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">90.0</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 268.935H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 268.935H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 166.86188)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">92.5</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 314.33H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 314.33H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 121.46689)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">95.0</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 359.725H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 359.725H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 31.054375 76.07187)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 15.900002">97.5</tspan></text>
+<path transform="matrix(1,0,0,-1,0,432)" d="M60.32 405.12H56.82"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M60.32 405.12H56.82"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 24.695 30.67688)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.3600008 12.720001 19.080002 22.260003">100.0</tspan></text>
+<text xml:space="preserve" transform="matrix(0 -1 1 0 18.616875 267.8194)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 7.7000005 13.83 17.75 23.880002 27.060002 34.04 40.16 49.9 56.25 59.03 65.18 69.1 75.25 81.59 87.74 92.95 98.159999 101.34 105.24 114.74">Data Completeness (%)</tspan></text>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width="2.25" stroke-linecap="square" stroke-linejoin="round" fill="none" stroke="#424242" d=""/>
+</g>
+<g clip-path="url(#clip_4)">
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width="2.25" stroke-linecap="square" stroke-linejoin="round" fill="none" stroke="#424242" d=""/>
+</g>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="square" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M60.32 41.96V405.12"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="square" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M709.2 41.96V405.12"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="square" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M60.32 41.96H709.2"/>
+<path transform="matrix(1,0,0,-1,0,432)" stroke-width=".8" stroke-linecap="square" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M60.32 405.12H709.2"/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 276.34596 20.880005)" font-size="12" font-family="DejaVuSans"><tspan y="0" x="0 9.240001 16.596 21.300002 28.656002 32.472005 40.848005 48.192007 59.880006 67.50001 70.836009 78.216 82.920009 90.3 97.908008 105.288 111.54 117.792 121.608 129.228 136.332 140.148 147.732 155.34 162.444 165.78 170.462 177.806 185.414 197.102 204.48201 212.09001">Data Completeness by Environment</tspan></text>
+</svg>

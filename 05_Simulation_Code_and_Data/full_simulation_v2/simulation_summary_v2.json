@@ -1,0 +1,108 @@
+{
+  "environments": {
+    "Controlled": {
+      "runs": 500,
+      "alert_rate": 0.27182962962962964,
+      "data_missing": 0.029758518518518517,
+      "avg_heart_rate": 72.03575457105477,
+      "avg_temperature": 36.31259045206773,
+      "confusion_matrix": {
+        "TP": 154835,
+        "FP": 11588205,
+        "TN": 31169295,
+        "FN": 287665
+      },
+      "sensitivity": 0.349909604519774,
+      "specificity": 0.7289784248377478,
+      "precision": 0.013185256969234543,
+      "accuracy": 0.7250956018518518,
+      "f1_score": 0.025412907429625604
+    },
+    "Residential": {
+      "runs": 500,
+      "alert_rate": 0.2780857407407407,
+      "data_missing": 0.05921546296296296,
+      "avg_heart_rate": 72.04797185121731,
+      "avg_temperature": 36.31159805177426,
+      "confusion_matrix": {
+        "TP": 153026,
+        "FP": 11860278,
+        "TN": 30920322,
+        "FN": 266374
+      },
+      "sensitivity": 0.3648688602765856,
+      "specificity": 0.7227650383585082,
+      "precision": 0.012738044421418121,
+      "accuracy": 0.719290462962963,
+      "f1_score": 0.024616688372859196
+    }
+  },
+  "mttd": [],
+  "alert_distribution": [
+    {
+      "environment": "Controlled",
+      "rule": "Hypothyroidism / Exposure to Cold Temperature",
+      "pct": 98.45014578848406
+    },
+    {
+      "environment": "Controlled",
+      "rule": "Fever / Overheating",
+      "pct": 0.7083855628525493
+    },
+    {
+      "environment": "Controlled",
+      "rule": "Potential Issue with Heart's Electrical System",
+      "pct": 0.2581784614546148
+    },
+    {
+      "environment": "Controlled",
+      "rule": "Anxiety / Stress / Physical Exertion",
+      "pct": 0.25780377142545713
+    },
+    {
+      "environment": "Controlled",
+      "rule": "Shock / Sepsis / Circulatory Problems",
+      "pct": 0.16861051312096356
+    },
+    {
+      "environment": "Controlled",
+      "rule": "Hypothermia / Bradycardia",
+      "pct": 0.15687590266234297
+    },
+    {
+      "environment": "Residential",
+      "rule": "Hypothyroidism / Exposure to Cold Temperature",
+      "pct": 97.97845788302702
+    },
+    {
+      "environment": "Residential",
+      "rule": "Fever / Overheating",
+      "pct": 1.1778774598561728
+    },
+    {
+      "environment": "Residential",
+      "rule": "Potential Issue with Heart's Electrical System",
+      "pct": 0.31410176584226956
+    },
+    {
+      "environment": "Residential",
+      "rule": "Anxiety / Stress / Physical Exertion",
+      "pct": 0.24790848545912098
+    },
+    {
+      "environment": "Residential",
+      "rule": "Shock / Sepsis / Circulatory Problems",
+      "pct": 0.14612133348161338
+    },
+    {
+      "environment": "Residential",
+      "rule": "Hypothermia / Bradycardia",
+      "pct": 0.13553307233380593
+    }
+  ],
+  "significance": {
+    "t_stat": -19.202944619483482,
+    "p_value": 3.789522566083928e-70,
+    "cohens_d": -1.2145008555928638
+  }
+}

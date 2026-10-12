@@ -1,0 +1,37 @@
+{
+  "source": "medisync_collected_readings.csv (Zenodo DOI 10.5281/zenodo.20793920)",
+  "n_rows_total": 7285,
+  "heart_rate": {
+    "simulated_baseline_bpm": 72.0,
+    "simulated_stationary_std_bpm": 3.0,
+    "real_n_nonzero": 7259,
+    "real_mean_bpm": 78.67,
+    "real_std_bpm": 7.92,
+    "real_min_bpm": 57.0,
+    "real_max_bpm": 110.0,
+    "per_subject_mean_bpm": {
+      "subject_01": 78.9,
+      "subject_02": 79.7,
+      "subject_03": 78.0,
+      "subject_04": 72.1,
+      "subject_05": 84.8
+    }
+  },
+  "temperature": {
+    "simulated_measured_mean_c": 36.3,
+    "simulated_std_c_approx": 0.35,
+    "real_n_all": 7285,
+    "real_n_plausible_34_42c": 6615,
+    "real_plausible_fraction": 0.908,
+    "real_mean_c_plausible_only": 36.01,
+    "real_std_c_plausible_only": 0.85
+  },
+  "spo2_not_modeled_in_simulation": {
+    "note": "The manuscript's 8 decision rules (Table 2) use only heart rate and temperature; SpO2 is not part of the rule system despite the MAX30100 sensor collecting it, so no simulated SpO2 exists to compare against.",
+    "real_n": 7285,
+    "real_mean_pct": 98.36,
+    "real_std_pct": 0.44,
+    "real_min_pct": 85.0,
+    "real_max_pct": 99.1
+  }
+}

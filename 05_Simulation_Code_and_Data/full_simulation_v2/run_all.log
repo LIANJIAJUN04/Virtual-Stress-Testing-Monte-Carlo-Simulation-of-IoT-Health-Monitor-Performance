@@ -1,0 +1,525 @@
+Full run: 1000 total runs, 500 per environment, 20 batches/env, 2 environments = 40 batches total
+======================================================================
+BATCH: CONTROLLED - batch 0 (runs 0-24)
+Start: 21:50:09
+======================================================================
+  run 5/25  elapsed=5.9s  est.remaining=23.4s
+  run 10/25  elapsed=11.9s  est.remaining=17.8s
+  run 15/25  elapsed=17.2s  est.remaining=11.5s
+  run 20/25  elapsed=22.5s  est.remaining=5.6s
+  run 25/25  elapsed=28.1s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_0.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_0_mttd.csv  (23 detected anomalies)
+Batch duration: 29.5s (1.18s/run)
+======================================================================
+BATCH: CONTROLLED - batch 1 (runs 25-49)
+Start: 21:50:39
+======================================================================
+  run 30/50  elapsed=5.8s  est.remaining=23.3s
+  run 35/50  elapsed=11.9s  est.remaining=17.9s
+  run 40/50  elapsed=18.2s  est.remaining=12.2s
+  run 45/50  elapsed=23.8s  est.remaining=6.0s
+  run 50/50  elapsed=29.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_1.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_1_mttd.csv  (15 detected anomalies)
+Batch duration: 30.4s (1.22s/run)
+======================================================================
+BATCH: CONTROLLED - batch 2 (runs 50-74)
+Start: 21:51:09
+======================================================================
+  run 55/75  elapsed=5.8s  est.remaining=23.4s
+  run 60/75  elapsed=11.6s  est.remaining=17.3s
+  run 65/75  elapsed=17.6s  est.remaining=11.7s
+  run 70/75  elapsed=23.7s  est.remaining=5.9s
+  run 75/75  elapsed=30.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_2.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_2_mttd.csv  (26 detected anomalies)
+Batch duration: 31.2s (1.25s/run)
+======================================================================
+BATCH: CONTROLLED - batch 3 (runs 75-99)
+Start: 21:51:40
+======================================================================
+  run 80/100  elapsed=5.9s  est.remaining=23.7s
+  run 85/100  elapsed=11.3s  est.remaining=17.0s
+  run 90/100  elapsed=16.7s  est.remaining=11.1s
+  run 95/100  elapsed=21.9s  est.remaining=5.5s
+  run 100/100  elapsed=27.1s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_3.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_3_mttd.csv  (23 detected anomalies)
+Batch duration: 27.9s (1.12s/run)
+======================================================================
+BATCH: CONTROLLED - batch 4 (runs 100-124)
+Start: 21:52:08
+======================================================================
+  run 105/125  elapsed=5.4s  est.remaining=21.5s
+  run 110/125  elapsed=10.9s  est.remaining=16.4s
+  run 115/125  elapsed=16.4s  est.remaining=11.0s
+  run 120/125  elapsed=21.9s  est.remaining=5.5s
+  run 125/125  elapsed=27.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_4.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_4_mttd.csv  (25 detected anomalies)
+Batch duration: 28.3s (1.13s/run)
+======================================================================
+BATCH: CONTROLLED - batch 5 (runs 125-149)
+Start: 21:52:36
+======================================================================
+  run 130/150  elapsed=5.8s  est.remaining=23.3s
+  run 135/150  elapsed=11.5s  est.remaining=17.2s
+  run 140/150  elapsed=16.8s  est.remaining=11.2s
+  run 145/150  elapsed=29.4s  est.remaining=7.4s
+  run 150/150  elapsed=34.8s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_5.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_5_mttd.csv  (25 detected anomalies)
+Batch duration: 35.6s (1.42s/run)
+======================================================================
+BATCH: CONTROLLED - batch 6 (runs 150-174)
+Start: 21:53:12
+======================================================================
+  run 155/175  elapsed=5.3s  est.remaining=21.1s
+  run 160/175  elapsed=10.5s  est.remaining=15.7s
+  run 165/175  elapsed=15.8s  est.remaining=10.5s
+  run 170/175  elapsed=21.1s  est.remaining=5.3s
+  run 175/175  elapsed=26.3s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_6.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_6_mttd.csv  (19 detected anomalies)
+Batch duration: 27.1s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 7 (runs 175-199)
+Start: 21:53:39
+======================================================================
+  run 180/200  elapsed=5.3s  est.remaining=21.1s
+  run 185/200  elapsed=10.6s  est.remaining=15.9s
+  run 190/200  elapsed=15.8s  est.remaining=10.6s
+  run 195/200  elapsed=21.1s  est.remaining=5.3s
+  run 200/200  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_7.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_7_mttd.csv  (23 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 8 (runs 200-224)
+Start: 21:54:06
+======================================================================
+  run 205/225  elapsed=5.3s  est.remaining=21.2s
+  run 210/225  elapsed=10.6s  est.remaining=15.9s
+  run 215/225  elapsed=15.9s  est.remaining=10.6s
+  run 220/225  elapsed=21.1s  est.remaining=5.3s
+  run 225/225  elapsed=26.2s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_8.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_8_mttd.csv  (25 detected anomalies)
+Batch duration: 27.0s (1.08s/run)
+======================================================================
+BATCH: CONTROLLED - batch 9 (runs 225-249)
+Start: 21:54:33
+======================================================================
+  run 230/250  elapsed=5.2s  est.remaining=20.9s
+  run 235/250  elapsed=10.4s  est.remaining=15.6s
+  run 240/250  elapsed=15.6s  est.remaining=10.4s
+  run 245/250  elapsed=20.8s  est.remaining=5.2s
+  run 250/250  elapsed=26.1s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_9.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_9_mttd.csv  (21 detected anomalies)
+Batch duration: 26.9s (1.08s/run)
+======================================================================
+BATCH: CONTROLLED - batch 10 (runs 250-274)
+Start: 21:55:00
+======================================================================
+  run 255/275  elapsed=5.3s  est.remaining=21.0s
+  run 260/275  elapsed=10.6s  est.remaining=15.9s
+  run 265/275  elapsed=15.9s  est.remaining=10.6s
+  run 270/275  elapsed=21.1s  est.remaining=5.3s
+  run 275/275  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_10.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_10_mttd.csv  (27 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 11 (runs 275-299)
+Start: 21:55:28
+======================================================================
+  run 280/300  elapsed=5.2s  est.remaining=20.8s
+  run 285/300  elapsed=10.9s  est.remaining=16.3s
+  run 290/300  elapsed=16.3s  est.remaining=10.8s
+  run 295/300  elapsed=21.6s  est.remaining=5.4s
+  run 300/300  elapsed=26.9s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_11.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_11_mttd.csv  (24 detected anomalies)
+Batch duration: 27.7s (1.11s/run)
+======================================================================
+BATCH: CONTROLLED - batch 12 (runs 300-324)
+Start: 21:55:55
+======================================================================
+  run 305/325  elapsed=5.3s  est.remaining=21.2s
+  run 310/325  elapsed=10.7s  est.remaining=16.0s
+  run 315/325  elapsed=15.9s  est.remaining=10.6s
+  run 320/325  elapsed=21.3s  est.remaining=5.3s
+  run 325/325  elapsed=26.7s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_12.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_12_mttd.csv  (26 detected anomalies)
+Batch duration: 27.5s (1.10s/run)
+======================================================================
+BATCH: CONTROLLED - batch 13 (runs 325-349)
+Start: 21:56:23
+======================================================================
+  run 330/350  elapsed=5.4s  est.remaining=21.5s
+  run 335/350  elapsed=10.7s  est.remaining=16.0s
+  run 340/350  elapsed=15.9s  est.remaining=10.6s
+  run 345/350  elapsed=21.1s  est.remaining=5.3s
+  run 350/350  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_13.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_13_mttd.csv  (15 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 14 (runs 350-374)
+Start: 21:56:50
+======================================================================
+  run 355/375  elapsed=5.3s  est.remaining=21.2s
+  run 360/375  elapsed=10.6s  est.remaining=16.0s
+  run 365/375  elapsed=15.9s  est.remaining=10.6s
+  run 370/375  elapsed=21.5s  est.remaining=5.4s
+  run 375/375  elapsed=27.0s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_14.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_14_mttd.csv  (22 detected anomalies)
+Batch duration: 27.8s (1.11s/run)
+======================================================================
+BATCH: CONTROLLED - batch 15 (runs 375-399)
+Start: 21:57:18
+======================================================================
+  run 380/400  elapsed=5.3s  est.remaining=21.1s
+  run 385/400  elapsed=10.6s  est.remaining=15.9s
+  run 390/400  elapsed=15.8s  est.remaining=10.6s
+  run 395/400  elapsed=21.1s  est.remaining=5.3s
+  run 400/400  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_15.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_15_mttd.csv  (14 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 16 (runs 400-424)
+Start: 21:57:45
+======================================================================
+  run 405/425  elapsed=5.1s  est.remaining=20.5s
+  run 410/425  elapsed=10.3s  est.remaining=15.4s
+  run 415/425  elapsed=15.6s  est.remaining=10.4s
+  run 420/425  elapsed=20.8s  est.remaining=5.2s
+  run 425/425  elapsed=26.0s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_16.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_16_mttd.csv  (17 detected anomalies)
+Batch duration: 26.8s (1.07s/run)
+======================================================================
+BATCH: CONTROLLED - batch 17 (runs 425-449)
+Start: 21:58:12
+======================================================================
+  run 430/450  elapsed=5.3s  est.remaining=21.2s
+  run 435/450  elapsed=10.6s  est.remaining=15.9s
+  run 440/450  elapsed=16.0s  est.remaining=10.7s
+  run 445/450  elapsed=21.2s  est.remaining=5.3s
+  run 450/450  elapsed=26.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_17.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_17_mttd.csv  (24 detected anomalies)
+Batch duration: 27.3s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 18 (runs 450-474)
+Start: 21:58:39
+======================================================================
+  run 455/475  elapsed=5.3s  est.remaining=21.3s
+  run 460/475  elapsed=10.7s  est.remaining=16.0s
+  run 465/475  elapsed=16.0s  est.remaining=10.7s
+  run 470/475  elapsed=21.3s  est.remaining=5.3s
+  run 475/475  elapsed=26.6s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_18.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_18_mttd.csv  (20 detected anomalies)
+Batch duration: 27.4s (1.09s/run)
+======================================================================
+BATCH: CONTROLLED - batch 19 (runs 475-499)
+Start: 21:59:06
+======================================================================
+  run 480/500  elapsed=5.3s  est.remaining=21.2s
+  run 485/500  elapsed=10.6s  est.remaining=15.9s
+  run 490/500  elapsed=15.9s  est.remaining=10.6s
+  run 495/500  elapsed=21.3s  est.remaining=5.3s
+  run 500/500  elapsed=26.6s  est.remaining=0.0s
+
+Saved: raw_data_v2/Controlled_batch_19.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Controlled_batch_19_mttd.csv  (21 detected anomalies)
+Batch duration: 27.4s (1.10s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 0 (runs 0-24)
+Start: 21:59:34
+======================================================================
+  run 5/25  elapsed=5.3s  est.remaining=21.1s
+  run 10/25  elapsed=10.6s  est.remaining=15.9s
+  run 15/25  elapsed=16.0s  est.remaining=10.7s
+  run 20/25  elapsed=21.9s  est.remaining=5.5s
+  run 25/25  elapsed=27.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_0.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_0_mttd.csv  (17 detected anomalies)
+Batch duration: 28.2s (1.13s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 1 (runs 25-49)
+Start: 22:00:02
+======================================================================
+  run 30/50  elapsed=5.2s  est.remaining=20.9s
+  run 35/50  elapsed=10.5s  est.remaining=15.8s
+  run 40/50  elapsed=15.9s  est.remaining=10.6s
+  run 45/50  elapsed=21.3s  est.remaining=5.3s
+  run 50/50  elapsed=26.6s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_1.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_1_mttd.csv  (24 detected anomalies)
+Batch duration: 27.5s (1.10s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 2 (runs 50-74)
+Start: 22:00:30
+======================================================================
+  run 55/75  elapsed=5.3s  est.remaining=21.1s
+  run 60/75  elapsed=10.7s  est.remaining=16.0s
+  run 65/75  elapsed=16.1s  est.remaining=10.7s
+  run 70/75  elapsed=21.5s  est.remaining=5.4s
+  run 75/75  elapsed=26.9s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_2.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_2_mttd.csv  (22 detected anomalies)
+Batch duration: 27.7s (1.11s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 3 (runs 75-99)
+Start: 22:00:57
+======================================================================
+  run 80/100  elapsed=5.3s  est.remaining=21.3s
+  run 85/100  elapsed=10.6s  est.remaining=15.9s
+  run 90/100  elapsed=15.9s  est.remaining=10.6s
+  run 95/100  elapsed=21.2s  est.remaining=5.3s
+  run 100/100  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_3.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_3_mttd.csv  (23 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 4 (runs 100-124)
+Start: 22:01:24
+======================================================================
+  run 105/125  elapsed=5.2s  est.remaining=20.7s
+  run 110/125  elapsed=10.4s  est.remaining=15.5s
+  run 115/125  elapsed=15.6s  est.remaining=10.4s
+  run 120/125  elapsed=21.0s  est.remaining=5.2s
+  run 125/125  elapsed=26.3s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_4.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_4_mttd.csv  (23 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 5 (runs 125-149)
+Start: 22:01:52
+======================================================================
+  run 130/150  elapsed=5.3s  est.remaining=21.3s
+  run 135/150  elapsed=10.8s  est.remaining=16.2s
+  run 140/150  elapsed=16.1s  est.remaining=10.7s
+  run 145/150  elapsed=21.5s  est.remaining=5.4s
+  run 150/150  elapsed=26.8s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_5.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_5_mttd.csv  (16 detected anomalies)
+Batch duration: 27.7s (1.11s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 6 (runs 150-174)
+Start: 22:02:19
+======================================================================
+  run 155/175  elapsed=5.4s  est.remaining=21.7s
+  run 160/175  elapsed=10.8s  est.remaining=16.2s
+  run 165/175  elapsed=16.2s  est.remaining=10.8s
+  run 170/175  elapsed=21.5s  est.remaining=5.4s
+  run 175/175  elapsed=26.9s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_6.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_6_mttd.csv  (22 detected anomalies)
+Batch duration: 27.7s (1.11s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 7 (runs 175-199)
+Start: 22:02:47
+======================================================================
+  run 180/200  elapsed=5.3s  est.remaining=21.2s
+  run 185/200  elapsed=10.6s  est.remaining=15.9s
+  run 190/200  elapsed=15.9s  est.remaining=10.6s
+  run 195/200  elapsed=21.2s  est.remaining=5.3s
+  run 200/200  elapsed=26.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_7.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_7_mttd.csv  (27 detected anomalies)
+Batch duration: 27.3s (1.09s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 8 (runs 200-224)
+Start: 22:03:14
+======================================================================
+  run 205/225  elapsed=5.3s  est.remaining=21.4s
+  run 210/225  elapsed=10.7s  est.remaining=16.0s
+  run 215/225  elapsed=15.9s  est.remaining=10.6s
+  run 220/225  elapsed=21.3s  est.remaining=5.3s
+  run 225/225  elapsed=26.6s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_8.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_8_mttd.csv  (20 detected anomalies)
+Batch duration: 27.4s (1.10s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 9 (runs 225-249)
+Start: 22:03:42
+======================================================================
+  run 230/250  elapsed=5.3s  est.remaining=21.3s
+  run 235/250  elapsed=10.6s  est.remaining=15.9s
+  run 240/250  elapsed=15.8s  est.remaining=10.6s
+  run 245/250  elapsed=21.1s  est.remaining=5.3s
+  run 250/250  elapsed=26.3s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_9.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_9_mttd.csv  (21 detected anomalies)
+Batch duration: 27.1s (1.08s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 10 (runs 250-274)
+Start: 22:04:09
+======================================================================
+  run 255/275  elapsed=5.2s  est.remaining=20.9s
+  run 260/275  elapsed=10.5s  est.remaining=15.7s
+  run 265/275  elapsed=15.8s  est.remaining=10.5s
+  run 270/275  elapsed=21.0s  est.remaining=5.3s
+  run 275/275  elapsed=26.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_10.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_10_mttd.csv  (27 detected anomalies)
+Batch duration: 27.2s (1.09s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 11 (runs 275-299)
+Start: 22:04:36
+======================================================================
+  run 280/300  elapsed=5.4s  est.remaining=21.7s
+  run 285/300  elapsed=10.6s  est.remaining=16.0s
+  run 290/300  elapsed=15.9s  est.remaining=10.6s
+  run 295/300  elapsed=21.2s  est.remaining=5.3s
+  run 300/300  elapsed=26.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_11.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_11_mttd.csv  (11 detected anomalies)
+Batch duration: 27.3s (1.09s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 12 (runs 300-324)
+Start: 22:05:03
+======================================================================
+  run 305/325  elapsed=5.2s  est.remaining=21.0s
+  run 310/325  elapsed=10.6s  est.remaining=15.9s
+  run 315/325  elapsed=16.5s  est.remaining=11.0s
+  run 320/325  elapsed=22.7s  est.remaining=5.7s
+  run 325/325  elapsed=28.3s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_12.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_12_mttd.csv  (17 detected anomalies)
+Batch duration: 29.2s (1.17s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 13 (runs 325-349)
+Start: 22:05:33
+======================================================================
+  run 330/350  elapsed=5.4s  est.remaining=21.7s
+  run 335/350  elapsed=10.9s  est.remaining=16.3s
+  run 340/350  elapsed=16.4s  est.remaining=10.9s
+  run 345/350  elapsed=22.5s  est.remaining=5.6s
+  run 350/350  elapsed=28.3s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_13.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_13_mttd.csv  (27 detected anomalies)
+Batch duration: 29.1s (1.16s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 14 (runs 350-374)
+Start: 22:06:02
+======================================================================
+  run 355/375  elapsed=6.0s  est.remaining=23.9s
+  run 360/375  elapsed=11.8s  est.remaining=17.7s
+  run 365/375  elapsed=17.6s  est.remaining=11.7s
+  run 370/375  elapsed=23.5s  est.remaining=5.9s
+  run 375/375  elapsed=29.0s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_14.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_14_mttd.csv  (28 detected anomalies)
+Batch duration: 29.8s (1.19s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 15 (runs 375-399)
+Start: 22:06:32
+======================================================================
+  run 380/400  elapsed=5.2s  est.remaining=20.7s
+  run 385/400  elapsed=10.4s  est.remaining=15.6s
+  run 390/400  elapsed=15.6s  est.remaining=10.4s
+  run 395/400  elapsed=20.8s  est.remaining=5.2s
+  run 400/400  elapsed=26.0s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_15.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_15_mttd.csv  (33 detected anomalies)
+Batch duration: 26.8s (1.07s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 16 (runs 400-424)
+Start: 22:06:58
+======================================================================
+  run 405/425  elapsed=5.3s  est.remaining=21.0s
+  run 410/425  elapsed=10.7s  est.remaining=16.1s
+  run 415/425  elapsed=16.3s  est.remaining=10.8s
+  run 420/425  elapsed=22.0s  est.remaining=5.5s
+  run 425/425  elapsed=27.7s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_16.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_16_mttd.csv  (25 detected anomalies)
+Batch duration: 28.6s (1.14s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 17 (runs 425-449)
+Start: 22:07:27
+======================================================================
+  run 430/450  elapsed=5.5s  est.remaining=22.0s
+  run 435/450  elapsed=11.0s  est.remaining=16.5s
+  run 440/450  elapsed=16.5s  est.remaining=11.0s
+  run 445/450  elapsed=22.0s  est.remaining=5.5s
+  run 450/450  elapsed=27.4s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_17.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_17_mttd.csv  (26 detected anomalies)
+Batch duration: 28.2s (1.13s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 18 (runs 450-474)
+Start: 22:07:55
+======================================================================
+  run 455/475  elapsed=5.7s  est.remaining=23.0s
+  run 460/475  elapsed=11.5s  est.remaining=17.2s
+  run 465/475  elapsed=17.3s  est.remaining=11.5s
+  run 470/475  elapsed=23.8s  est.remaining=5.9s
+  run 475/475  elapsed=29.5s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_18.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_18_mttd.csv  (25 detected anomalies)
+Batch duration: 30.3s (1.21s/run)
+======================================================================
+BATCH: RESIDENTIAL - batch 19 (runs 475-499)
+Start: 22:08:25
+======================================================================
+  run 480/500  elapsed=5.9s  est.remaining=23.6s
+  run 485/500  elapsed=11.6s  est.remaining=17.5s
+  run 490/500  elapsed=17.1s  est.remaining=11.4s
+  run 495/500  elapsed=23.4s  est.remaining=5.9s
+  run 500/500  elapsed=29.1s  est.remaining=0.0s
+
+Saved: raw_data_v2/Residential_batch_19.parquet  (2,160,000 rows)
+Saved: raw_data_v2/Residential_batch_19_mttd.csv  (27 detected anomalies)
+Batch duration: 29.9s (1.20s/run)
+
+======================================================================
+ALL BATCHES COMPLETE. Total elapsed: 18.8 min
+======================================================================

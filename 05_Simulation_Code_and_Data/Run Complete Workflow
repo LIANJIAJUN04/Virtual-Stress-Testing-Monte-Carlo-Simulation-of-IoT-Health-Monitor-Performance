@@ -1,0 +1,235 @@
+
+(venv) s  ~/IoT Healthcare_Simv2  00:44  # 1. Make sure venv is active
+source venv/bin/activate
+
+# 2. Check what data you have
+echo "Current data files:"
+ls -lh full_spec_results/
+
+# 3. If you need more data, run more batches
+echo -e "\nRunning a few more batches for better statistics..."
+python3 run_batch_integrated.py Controlled 1
+python3 run_batch_integrated.py Residential 0
+
+# 4. Analyze results
+echo -e "\nAnalyzing results..."
+python3 analyze_1000runs.py
+
+# 5. Create figures
+echo -e "\nCreating figures..."
+python3 create_figures.py
+
+# 6. Show results
+echo -e "\n=== FINAL RESULTS ==="
+ls -lh paper_figures/
+cat simulation_summary_1000runs.json
+Current data files:
+total 77M
+drwxrwxr-x 2 s s 4.0K Jan  5 00:34 ./
+drwxrwxr-x 7 s s 4.0K Jan  5 00:46 ../
+-rw-rw-r-- 1 s s 7.8M Jan  5 00:34 Controlled_batch_0.parquet
+-rw-rw-r-- 1 s s 7.8M Jan  5 00:34 Controlled_batch_1.parquet
+-rw-rw-r-- 1 s s 7.8M Jan  5 00:35 Controlled_batch_2.parquet
+-rw-rw-r-- 1 s s 7.8M Jan  5 00:35 Controlled_batch_3.parquet
+-rw-rw-r-- 1 s s 7.8M Jan  5 00:35 Controlled_batch_4.parquet
+-rw-rw-r-- 1 s s 7.7M Jan  5 00:35 Residential_batch_0.parquet
+-rw-rw-r-- 1 s s 7.7M Jan  5 00:35 Residential_batch_1.parquet
+-rw-rw-r-- 1 s s 7.7M Jan  5 00:35 Residential_batch_2.parquet
+-rw-rw-r-- 1 s s 7.7M Jan  5 00:35 Residential_batch_3.parquet
+-rw-rw-r-- 1 s s 7.7M Jan  5 00:35 Residential_batch_4.parquet
+
+Running a few more batches for better statistics...
+
+============================================================
+FULL 1000-RUN SIMULATION
+Batch: CONTROLLED - ID: 1
+Start: 00:46:35
+============================================================
+Running runs 100 to 199
+Batch size: 100 runs
+Each run: 6 hours
+Time step: 2.0 seconds
+  Run 101/200 - Starting...
+  Run 111/200 - 0.6s - 0.1 min left
+  Run 121/200 - 1.2s - 0.1 min left
+  Run 131/200 - 1.7s - 0.1 min left
+  Run 141/200 - 2.3s - 0.1 min left
+  Run 151/200 - 2.9s - 0.0 min left
+  Run 161/200 - 3.4s - 0.0 min left
+  Run 171/200 - 4.0s - 0.0 min left
+  Run 181/200 - 4.5s - 0.0 min left
+  Run 191/200 - 5.1s - 0.0 min left
+
+============================================================
+✓ BATCH COMPLETED SUCCESSFULLY
+  Output file: full_spec_results/Controlled_batch_1.parquet
+  File size: 7.71 MB
+  Total rows: 216,000
+  Batch duration: 5.80 seconds (0.10 minutes)
+  Average per run: 0.06 seconds
+  End time: 00:46:41
+============================================================
+
+============================================================
+FULL 1000-RUN SIMULATION
+Batch: RESIDENTIAL - ID: 0
+Start: 00:46:41
+============================================================
+Running runs 0 to 99
+Batch size: 100 runs
+Each run: 6 hours
+Time step: 2.0 seconds
+  Run 1/100 - Starting...
+  Run 11/100 - 0.6s - 0.1 min left
+  Run 21/100 - 1.3s - 0.1 min left
+  Run 31/100 - 1.9s - 0.1 min left
+  Run 41/100 - 2.6s - 0.1 min left
+  Run 51/100 - 3.2s - 0.1 min left
+  Run 61/100 - 3.8s - 0.0 min left
+  Run 71/100 - 4.4s - 0.0 min left
+  Run 81/100 - 5.0s - 0.0 min left
+  Run 91/100 - 5.6s - 0.0 min left
+
+============================================================
+✓ BATCH COMPLETED SUCCESSFULLY
+  Output file: full_spec_results/Residential_batch_0.parquet
+  File size: 7.64 MB
+  Total rows: 216,000
+  Batch duration: 6.31 seconds (0.11 minutes)
+  Average per run: 0.06 seconds
+  End time: 00:46:48
+============================================================
+
+Analyzing results...
+======================================================================
+ANALYZING 1000-RUN SIMULATION RESULTS
+======================================================================
+Found 10 result files
+  Loaded full_spec_results/Residential_batch_4.parquet: 216,000 rows
+  Loaded full_spec_results/Controlled_batch_4.parquet: 216,000 rows
+  Loaded full_spec_results/Controlled_batch_3.parquet: 216,000 rows
+  Loaded full_spec_results/Residential_batch_2.parquet: 216,000 rows
+  Loaded full_spec_results/Controlled_batch_2.parquet: 216,000 rows
+  Loaded full_spec_results/Residential_batch_1.parquet: 216,000 rows
+  Loaded full_spec_results/Controlled_batch_0.parquet: 216,000 rows
+  Loaded full_spec_results/Controlled_batch_1.parquet: 216,000 rows
+  Loaded full_spec_results/Residential_batch_3.parquet: 216,000 rows
+  Loaded full_spec_results/Residential_batch_0.parquet: 216,000 rows
+
+Total data loaded:
+  Total rows: 2,160,000
+  Total runs: 500
+  Environments: ['Residential', 'Controlled']
+
+======================================================================
+PERFORMANCE METRICS BY ENVIRONMENT
+======================================================================
+
+CONTROLLED Environment:
+  Alert rate: 1.38%
+  Data missing rate: 1.99%
+  Data completeness: 98.0%
+  Heart rate range: 46.1 - 96.5 BPM
+  Avg heart rate: 72.0 BPM
+  Temperature range: 34.3 - 39.2 °C
+  Avg temperature: 36.8 °C
+  Runs completed: 500
+  Data points: 1,080,000
+
+RESIDENTIAL Environment:
+  Alert rate: 4.05%
+  Data missing rate: 5.02%
+  Data completeness: 95.0%
+  Heart rate range: 44.7 - 101.8 BPM
+  Avg heart rate: 72.0 BPM
+  Temperature range: 33.5 - 40.5 °C
+  Avg temperature: 36.8 °C
+  Runs completed: 500
+  Data points: 1,080,000
+
+======================================================================
+STATISTICAL COMPARISON
+======================================================================
+Controlled alert rate: 1.38% ± 0.25%
+Residential alert rate: 4.05% ± 0.44%
+
+Alert Rate Comparison (t-test):
+  Controlled: 1.38%
+  Residential: 4.05%
+  t-statistic: -117.3546
+  p-value: 0.000000
+  Significance: *** (p < 0.001)
+
+======================================================================
+SUMMARY SAVED TO: simulation_summary_1000runs.json
+======================================================================
+
+FOR YOUR PAPER ABSTRACT:
+----------------------------------------
+Alert rates: Controlled=1.4%, Residential=4.1%
+Data completeness: Controlled=98.0%, Residential=95.0%
+Relative difference: 2.7% increase in alert rate
+Statistical significance: Significant (p=0.0000)
+----------------------------------------
+
+Creating figures...
+Creating figures from simulation results...
+Loaded full_spec_results/Residential_batch_4.parquet: 216,000 rows
+Loaded full_spec_results/Controlled_batch_4.parquet: 216,000 rows
+Loaded full_spec_results/Controlled_batch_3.parquet: 216,000 rows
+Loaded full_spec_results/Residential_batch_2.parquet: 216,000 rows
+Loaded full_spec_results/Controlled_batch_2.parquet: 216,000 rows
+Loaded full_spec_results/Residential_batch_1.parquet: 216,000 rows
+Loaded full_spec_results/Controlled_batch_0.parquet: 216,000 rows
+Loaded full_spec_results/Controlled_batch_1.parquet: 216,000 rows
+Loaded full_spec_results/Residential_batch_3.parquet: 216,000 rows
+Loaded full_spec_results/Residential_batch_0.parquet: 216,000 rows
+
+Total data: 2,160,000 rows from 500 runs
+✓ Figure 1: Alert Rate Comparison
+✓ Figure 2: Data Completeness
+✓ Figure 3: Parameter Distributions
+
+======================================================================
+FIGURES SAVED TO 'paper_figures/' DIRECTORY
+======================================================================
+
+Quick statistics:
+Total runs analyzed: 500
+Residential: Alert rate=4.1%, Completeness=95.0%
+Controlled: Alert rate=1.4%, Completeness=98.0%
+
+=== FINAL RESULTS ===
+total 400K
+drwxrwxr-x 2 s s 4.0K Jan  5 00:46 ./
+drwxrwxr-x 8 s s 4.0K Jan  5 00:46 ../
+-rw-rw-r-- 1 s s  13K Jan  5 00:46 figure1_alert_comparison.pdf
+-rw-rw-r-- 1 s s  94K Jan  5 00:46 figure1_alert_comparison.png
+-rw-rw-r-- 1 s s  13K Jan  5 00:46 figure2_data_completeness.pdf
+-rw-rw-r-- 1 s s 103K Jan  5 00:46 figure2_data_completeness.png
+-rw-rw-r-- 1 s s  21K Jan  5 00:46 figure3_distributions.pdf
+-rw-rw-r-- 1 s s 134K Jan  5 00:46 figure3_distributions.png
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: simulation_summary_1000runs.json
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ {
+   2   │   "total_simulations": 500,
+   3   │   "total_data_points": 2160000,
+   4   │   "environments": {
+   5   │     "Residential": {
+   6   │       "runs": 500,
+   7   │       "alert_rate": 0.04054722222222222,
+   8   │       "data_missing": 0.05015833333333333,
+   9   │       "avg_heart_rate": 72.00257230602176,
+  10   │       "avg_temperature": 36.80041053410907
+  11   │     },
+  12   │     "Controlled": {
+  13   │       "runs": 500,
+  14   │       "alert_rate": 0.013775,
+  15   │       "data_missing": 0.019853703703703703,
+  16   │       "avg_heart_rate": 72.00632193147878,
+  17   │       "avg_temperature": 36.799938012602226
+  18   │     }
+  19   │   }
+  20   │ }
+───────┴───────────────────────────────────────────

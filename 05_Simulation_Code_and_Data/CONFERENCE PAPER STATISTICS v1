@@ -1,0 +1,155 @@
+(venv) s  ~/IoT Healthcare_Simv2  23:35  python stats.py 
+Loading conference results...
+======================================================================
+CONFERENCE PAPER STATISTICS
+======================================================================
+
+1. DESCRIPTIVE STATISTICS
+--------------------------------------------------
+
+Controlled Environment (n=100 runs):
+  Alert Rate: 18.30% ± 38.67%
+  Data Completeness:
+    - Heart Rate: 98.0%
+    - Body Temp:  99.0%
+  Processing Latency: 0.031 ± 0.029 sec
+
+Residential Environment (n=100 runs):
+  Alert Rate: 17.67% ± 38.14%
+  Data Completeness:
+    - Heart Rate: 96.0%
+    - Body Temp:  98.0%
+  Processing Latency: 0.101 ± 0.104 sec
+
+
+2. VALIDITY METRICS (Clinical Performance)
+--------------------------------------------------
+
+Controlled Environment:
+  Confusion Matrix:
+    True Positives:    12220 (1.1%)
+    False Positives:  185466 (17.2%)
+    True Negatives:   848370 (78.6%)
+    False Negatives:   33944 (3.1%)
+  Performance Metrics:
+    Sensitivity:     0.2647 (Recall)
+    Specificity:     0.8206
+    Precision:       0.0618
+    Accuracy:        0.7968
+    F1-Score:        0.1002
+
+Residential Environment:
+  Confusion Matrix:
+    True Positives:    14684 (1.4%)
+    False Positives:  176172 (16.3%)
+    True Negatives:   865728 (80.2%)
+    False Negatives:   23416 (2.2%)
+  Performance Metrics:
+    Sensitivity:     0.3854 (Recall)
+    Specificity:     0.8309
+    Precision:       0.0769
+    Accuracy:        0.8152
+    F1-Score:        0.1283
+
+
+3. DETECTION TIME ANALYSIS
+--------------------------------------------------
+
+Mean Time to Detect (MTTD) by Anomaly Type:
+Environment     Anomaly  Mean_MTTD   Std_MTTD  Count
+ Controlled Bradycardia   4.081356   2.516288      8
+ Controlled       Fever 143.267992 410.400455     13
+ Controlled Tachycardia 156.346104 194.178261     15
+Residential Bradycardia   2.259776   0.844910     14
+Residential       Fever  27.953745  55.451927     11
+Residential Tachycardia  18.338173  19.673077     10
+
+  (Saved to: conference_mttd_results.csv)
+
+
+4. STATISTICAL SIGNIFICANCE TESTING
+--------------------------------------------------
+
+Independent t-tests (Controlled vs Residential):
+----------------------------------------
+
+Alert Rate:
+  Controlled: 0.1830 ± 0.1318
+  Residential: 0.1767 ± 0.1344
+  t-statistic: 0.3361
+  p-value: 0.737179
+  Cohen's d: 0.0475 (small)
+  Significance: ns (p ≥ 0.05)
+
+Sensitivity:
+  Controlled: 0.1090 ± 0.2284
+  Residential: 0.1406 ± 0.2373
+  t-statistic: -0.9589
+  p-value: 0.338792
+  Cohen's d: -0.1356 (small)
+  Significance: ns (p ≥ 0.05)
+
+Specificity:
+  Controlled: 0.8210 ± 0.1309
+  Residential: 0.8295 ± 0.1354
+  t-statistic: -0.4509
+  p-value: 0.652542
+  Cohen's d: -0.0638 (small)
+  Significance: ns (p ≥ 0.05)
+
+
+5. ALERT DISTRIBUTION BY RULE
+--------------------------------------------------
+
+Alert Distribution by Decision Rule:
+
+Controlled Environment (Total alerts: 197,686):
+  Rule 1: Hypothermia, Bradycardia
+    Count:  57503 (29.1%)
+  Rule 4: Anxiety, Stress
+    Count:  60907 (30.8%)
+  Rule 5: Potential Heart Issue
+    Count:  79276 (40.1%)
+
+Residential Environment (Total alerts: 190,856):
+  Rule 1: Hthermiaypo, Bradycardia
+    Count:  56931 (29.8%)
+  Rule 3: Fever, Overheating
+    Count:    529 (0.3%)
+  Rule 4: Anxiety, Stress
+    Count:  66297 (34.7%)
+  Rule 5: Potential Heart Issue
+    Count:  67099 (35.2%)
+
+
+======================================================================
+SUMMARY FOR PAPER TABLE (Copy into your paper)
+======================================================================
+
+Table 1: Key Performance Indicators
+----------------------------------------
+Metric | Controlled | Residential | Change | p-value
+----------------------------------------
+Alert Rate (%) | 18.30 | 17.67 | +-0.63% | 0.7372
+Sensitivity | 0.109 | 0.141 | --0.032 | 0.3388
+Specificity | 0.821 | 0.830 | --0.008 | 0.6525
+HR Data Complete (%) | 98.0 | 96.0 | -2.0% | -
+----------------------------------------
+
+Note: All differences are statistically significant (p < 0.001)
+except where indicated. Change shows Residential vs Controlled.
+
+
+======================================================================
+SAVING ALL RESULTS
+======================================================================
+✓ Run-level metrics saved to: conference_run_metrics.csv
+✓ Summary statistics saved to: conference_summary_stats.json
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+Use these statistics in your conference paper.
+All files are ready for inclusion in your submission.
+
+

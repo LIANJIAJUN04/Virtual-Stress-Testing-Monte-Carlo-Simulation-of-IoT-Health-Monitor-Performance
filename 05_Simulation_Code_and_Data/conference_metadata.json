@@ -1,0 +1,34 @@
+{
+  "simulation_time": 66.28554654121399,
+  "total_rows": 2160000,
+  "runs_per_env": 100,
+  "simulation_hours": 6.0,
+  "time_step": 2.0,
+  "environments": [
+    "Controlled",
+    "Residential"
+  ],
+  "sensor_specs": {
+    "MAX30100": {
+      "name": "MAX30100",
+      "sampling_interval": 2.0,
+      "accuracy_offset": 0.0,
+      "precision_std": 1.5,
+      "packet_loss_prob": 0.02
+    },
+    "DS18B20": {
+      "name": "DS18B20",
+      "sampling_interval": 4.0,
+      "accuracy_offset": -0.5,
+      "precision_std": 0.2,
+      "packet_loss_prob": 0.01
+    },
+    "DHT11": {
+      "name": "DHT11",
+      "sampling_interval": 4.0,
+      "accuracy_offset": 0.0,
+      "precision_std": 2.0,
+      "packet_loss_prob": 0.03
+    }
+  }
+}

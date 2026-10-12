@@ -1,0 +1,4 @@
+# Save current settings, disable canonical mode, run command, restore settings
+saved_stty=$(stty -g); stty -icanon; cat >> output_file.txt; stty "$saved_stty"
+# End input to cat with Ctrl+D (on an empty line)
+

@@ -1,0 +1,141 @@
+======================================================================
+ANALYZING FULL SIMULATION RESULTS
+======================================================================
+  loaded raw_data_v2\Controlled_batch_0.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_0_mttd.csv: 23 rows
+  loaded raw_data_v2\Controlled_batch_1.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_10.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_10_mttd.csv: 27 rows
+  loaded raw_data_v2\Controlled_batch_11.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_11_mttd.csv: 24 rows
+  loaded raw_data_v2\Controlled_batch_12.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_12_mttd.csv: 26 rows
+  loaded raw_data_v2\Controlled_batch_13.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_13_mttd.csv: 15 rows
+  loaded raw_data_v2\Controlled_batch_14.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_14_mttd.csv: 22 rows
+  loaded raw_data_v2\Controlled_batch_15.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_15_mttd.csv: 14 rows
+  loaded raw_data_v2\Controlled_batch_16.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_16_mttd.csv: 17 rows
+  loaded raw_data_v2\Controlled_batch_17.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_17_mttd.csv: 24 rows
+  loaded raw_data_v2\Controlled_batch_18.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_18_mttd.csv: 20 rows
+  loaded raw_data_v2\Controlled_batch_19.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_19_mttd.csv: 21 rows
+  loaded raw_data_v2\Controlled_batch_1_mttd.csv: 15 rows
+  loaded raw_data_v2\Controlled_batch_2.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_2_mttd.csv: 26 rows
+  loaded raw_data_v2\Controlled_batch_3.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_3_mttd.csv: 23 rows
+  loaded raw_data_v2\Controlled_batch_4.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_4_mttd.csv: 25 rows
+  loaded raw_data_v2\Controlled_batch_5.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_5_mttd.csv: 25 rows
+  loaded raw_data_v2\Controlled_batch_6.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_6_mttd.csv: 19 rows
+  loaded raw_data_v2\Controlled_batch_7.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_7_mttd.csv: 23 rows
+  loaded raw_data_v2\Controlled_batch_8.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_8_mttd.csv: 25 rows
+  loaded raw_data_v2\Controlled_batch_9.parquet: 2,160,000 rows
+  loaded raw_data_v2\Controlled_batch_9_mttd.csv: 21 rows
+  loaded raw_data_v2\Residential_batch_0.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_0_mttd.csv: 17 rows
+  loaded raw_data_v2\Residential_batch_1.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_10.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_10_mttd.csv: 27 rows
+  loaded raw_data_v2\Residential_batch_11.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_11_mttd.csv: 11 rows
+  loaded raw_data_v2\Residential_batch_12.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_12_mttd.csv: 17 rows
+  loaded raw_data_v2\Residential_batch_13.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_13_mttd.csv: 27 rows
+  loaded raw_data_v2\Residential_batch_14.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_14_mttd.csv: 28 rows
+  loaded raw_data_v2\Residential_batch_15.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_15_mttd.csv: 33 rows
+  loaded raw_data_v2\Residential_batch_16.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_16_mttd.csv: 25 rows
+  loaded raw_data_v2\Residential_batch_17.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_17_mttd.csv: 26 rows
+  loaded raw_data_v2\Residential_batch_18.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_18_mttd.csv: 25 rows
+  loaded raw_data_v2\Residential_batch_19.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_19_mttd.csv: 27 rows
+  loaded raw_data_v2\Residential_batch_1_mttd.csv: 24 rows
+  loaded raw_data_v2\Residential_batch_2.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_2_mttd.csv: 22 rows
+  loaded raw_data_v2\Residential_batch_3.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_3_mttd.csv: 23 rows
+  loaded raw_data_v2\Residential_batch_4.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_4_mttd.csv: 23 rows
+  loaded raw_data_v2\Residential_batch_5.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_5_mttd.csv: 16 rows
+  loaded raw_data_v2\Residential_batch_6.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_6_mttd.csv: 22 rows
+  loaded raw_data_v2\Residential_batch_7.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_7_mttd.csv: 27 rows
+  loaded raw_data_v2\Residential_batch_8.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_8_mttd.csv: 20 rows
+  loaded raw_data_v2\Residential_batch_9.parquet: 2,160,000 rows
+  loaded raw_data_v2\Residential_batch_9_mttd.csv: 21 rows
+
+Total rows: 86,400,896
+Total runs: {'Controlled': 500, 'Residential': 500}
+
+======================================================================
+TABLE 5 STYLE - DESCRIPTIVE STATS
+======================================================================
+
+Controlled: alert_rate=0.31%  data_missing=2.98%  avg_hr=72.04  avg_temp=36.31
+
+Residential: alert_rate=0.43%  data_missing=5.92%  avg_hr=72.05  avg_temp=36.31
+
+======================================================================
+TABLE 6 STYLE - CLINICAL PERFORMANCE (vs ground_truth_anomaly)
+======================================================================
+
+Controlled: TP=116249 FP=16092 TN=42741408 FN=326686
+  Sensitivity=0.2625  Specificity=0.9996  Precision=0.8784  Accuracy=0.9921  F1=0.4042
+
+Residential: TP=115804 FP=72293 TN=42708307 FN=304057
+  Sensitivity=0.2758  Specificity=0.9983  Precision=0.6157  Accuracy=0.9913  F1=0.3810
+
+======================================================================
+TABLE 7 STYLE - MEAN TIME TO DETECT (MTTD)
+======================================================================
+  Controlled   bradycardia  mean=42.35s std=46.97s n=127
+  Controlled   fever        mean=418.99s std=157.28s n=183
+  Controlled   tachycardia  mean=28.33s std=61.79s n=125
+  Residential  bradycardia  mean=47.65s std=54.96s n=142
+  Residential  fever        mean=346.41s std=169.87s n=176
+  Residential  tachycardia  mean=34.44s std=61.69s n=143
+
+======================================================================
+TABLE 8 STYLE - ALERT DISTRIBUTION BY RULE
+======================================================================
+
+Controlled:
+  Fever / Overheating: 63.1%
+  Anxiety / Stress: 23.0%
+  Hypothermia / Bradycardia: 14.0%
+  Hypothyroidism: 0.0%
+  Electrical System Issue: 0.0%
+
+Residential:
+  Fever / Overheating: 75.4%
+  Anxiety / Stress: 15.9%
+  Hypothermia / Bradycardia: 8.7%
+  Hypothyroidism: 0.0%
+  Electrical System Issue: 0.0%
+
+======================================================================
+STATISTICAL SIGNIFICANCE (per-run alert rate, Controlled vs Residential)
+======================================================================
+  Controlled: 0.31% +/- 0.39%
+  Residential: 0.43% +/- 0.39%
+  t=-5.2112  p=0.000000  Cohen's d=-0.3296
+
+Saved: simulation_summary_v2.json

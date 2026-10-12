@@ -1,0 +1,30 @@
+# Large simulation outputs (6+ GB; regenerate with full_simulation_v2/run_all.py)
+05_Simulation_Code_and_Data/full_simulation_v2/raw_data_v2/
+05_Simulation_Code_and_Data/full_simulation_v2/raw_data_v2_corrected/
+05_Simulation_Code_and_Data/conference_results_200runs.csv
+05_Simulation_Code_and_Data/full_spec_results/
+05_Simulation_Code_and_Data/research_results_20260105_2133/
+*.parquet
+# Copyrighted third-party PDFs
+02_Source_Literature/
+03_New_Literature_To_Review/
+# Personal / sensitive report
+06_Review_Roadmap_and_QA/Turnitin_17 Jan 26.pdf
+__pycache__/
+*.pyc
+
+# Not for public release
+00_Manuscript/
+08_Weekly_Reports/
+06_Review_Roadmap_and_QA/
+07_Original_FYP_Reference/
+05_Simulation_Code_and_Data/Admin/
+CLAUDE.md
+Project 1.md
+Internship_Report_Project_Summary.md
+README.md
+!05_Simulation_Code_and_Data/full_simulation_v2/README.md
+04_Figures/Introduction_draft*.pdf
+05_Simulation_Code_and_Data/*.docx
+05_Simulation_Code_and_Data/*.pdf
+05_Simulation_Code_and_Data/real_world_dataset/medisync_collected_readings.csv

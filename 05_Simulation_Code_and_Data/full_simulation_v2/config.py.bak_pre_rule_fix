@@ -1,0 +1,131 @@
+"""
+config.py - Simulation parameters for the N=1000, 24-hour, dt=1s Monte Carlo run.
+
+Values are taken directly from the manuscript (Methodology section, Table 1,
+Table 2, Table 3) wherever the manuscript specifies a number. Where the
+manuscript describes a mechanism but does not pin down a numeric parameter
+(OU reversion rate/volatility, tachycardia anomaly duration, additive
+temperature-noise magnitude), a value is chosen here and marked ASSUMPTION so
+it can be reviewed/adjusted before the run counts as final.
+"""
+
+CONFIG = {
+    # ---- Monte Carlo scale (Methodology: "N = 1,000 independent Monte Carlo
+    # runs", "simulated 24-hour periods", "fixed time-step clock (dt = 1.0 s)") ----
+    "TOTAL_RUNS": 1000,
+    "ENVIRONMENTS": ["Controlled", "Residential"],
+    "SIMULATION_HOURS": 24.0,
+    "TIME_STEP_SECONDS": 1.0,
+    "RUNS_PER_BATCH": 25,  # batch size for resumable batch runs
+
+    "OUTPUT_DIR": "raw_data_v2",
+
+    # ---- Physiological baseline (Methodology paragraph 3) ----
+    "HEART_RATE_BASELINE": 72.0,
+    "HEART_RATE_MIN": 40.0,
+    "HEART_RATE_MAX": 180.0,
+    # ASSUMPTION: manuscript describes the HR process qualitatively as an
+    # Ornstein-Uhlenbeck process pulled back toward 72 BPM but does not give
+    # numeric reversion speed (theta) or volatility (sigma). Chosen so the
+    # process has a stationary std-dev of ~3 BPM and a relaxation timescale
+    # of a few minutes, consistent with normal resting heart-rate variability.
+    "HR_OU_THETA": 0.005,   # per-second mean-reversion rate
+    "HR_OU_SIGMA": 0.30,    # per-second volatility
+
+    "BODY_TEMP_BASELINE": 36.8,
+    "BODY_TEMP_MIN": 35.0,
+    "BODY_TEMP_MAX": 41.0,
+    "BODY_TEMP_CIRCADIAN_AMPLITUDE": 0.5,  # manuscript: oscillates 36.3-37.3 degC
+    # ASSUMPTION: "additive random noise... tiny, unpredictable jitters" -
+    # magnitude not specified. Chosen small relative to the 0.5 degC circadian
+    # swing.
+    "BODY_TEMP_NOISE_STD": 0.03,
+
+    # ---- Anomaly injection (Methodology: "Poisson distribution technique...
+    # lambda ~ 1 event per 24 hours"; Table 1 for target ranges/durations) ----
+    "ANOMALY_LAMBDA_PER_24H": 1.0,
+    "ANOMALY_TYPES": {
+        "bradycardia": {
+            "target_range": (45.0, 55.0),
+            "duration_seconds": 5 * 60,       # Table 1: "5 minutes (Linear Decrease)"
+            "pattern": "linear",
+        },
+        "tachycardia": {
+            "target_range": (110.0, 130.0),
+            # ASSUMPTION: Table 1 gives only "Rapid Onset (Step Increase)" for
+            # tachycardia with no explicit sustain duration. Using the same
+            # 5-minute sustain window as bradycardia (both are acute HR events).
+            "duration_seconds": 5 * 60,
+            "pattern": "step",
+        },
+        "fever": {
+            "target_range": (38.5, 40.0),
+            "duration_seconds": 30 * 60,      # Table 1: "30 minutes (Gradual Increase)"
+            "pattern": "gradual",
+        },
+    },
+
+    # ---- Sensor specs (Methodology + conference_metadata.json, unchanged) ----
+    "SENSOR_SPECS": {
+        "MAX30100": {"sampling_interval": 2.0, "accuracy_offset": 0.0, "precision_std": 1.5, "packet_loss_prob": 0.02},
+        "DS18B20":  {"sampling_interval": 4.0, "accuracy_offset": -0.5, "precision_std": 0.2, "packet_loss_prob": 0.01},
+        "DHT11":    {"sampling_interval": 4.0, "accuracy_offset": 0.0, "precision_std": 2.0, "packet_loss_prob": 0.03},
+    },
+
+    # ---- Environments (Table 3) ----
+    "ENVIRONMENT_PARAMS": {
+        "Controlled": {
+            "sensor_noise_scale": 1.0,
+            "packet_loss_scale": 1.0,
+            "network_latency_mean": 0.05,
+            "network_latency_std": 0.02,
+        },
+        "Residential": {
+            "sensor_noise_scale": 1.5,   # Table 3: "+50% for motion artifacts"
+            "packet_loss_scale": 2.0,    # Table 3: packet loss 0.01 -> 0.02
+            "network_latency_mean": 0.15,
+            "network_latency_std": 0.10,
+        },
+    },
+
+    "PROCESSING_LATENCY_MEAN": 0.050,  # Methodology: "~50 ms (+-10 ms)"
+    "PROCESSING_LATENCY_STD": 0.010,
+
+    "ALERT_TRANSMISSION_RELIABILITY": 0.99,
+    "ALERT_TRANSMISSION_DELAY_MEAN": 2.0,
+}
+
+# ---- Decision rules (Table 2) ----
+# Each rule: (hr_low, hr_high, temp_low, temp_high, label, rule_id)
+# None for hr_low/hr_high/temp_low/temp_high means "not constrained by this
+# reading". A rule that requires a reading to be MISSING is marked via
+# requires_missing=("hr",) / ("temp",) below rather than a numeric bound -
+# this is the reading of "Undefined" in Table 2 used here: ASSUMPTION that
+# "Undefined" means "this sensor's reading was not available at evaluation
+# time" (i.e. lost packet / stale buffer), not "any value accepted". This
+# reading lets Electrical System Issue / Hypothyroidism / Shock-Sepsis  be
+# genuinely distinct rules tied to single-sensor dropouts, rather than
+# duplicating/overlapping the two-sensor rules above them.
+#
+# Rules are evaluated in order; first match wins. Two-sensor rules (both HR
+# and Temp required) are checked first, then single-sensor missing-data
+# rules, then Normal as the catch-all.
+DECISION_RULES_BOTH_PRESENT = [
+    (None, 55, None, 36.0, "Hypothermia / Bradycardia", 1),
+    (100, None, 38.0, None, "High Fever / Dehydration", 2),
+    (70, 90, 37.5, 38.5, "Fever / Overheating", 3),
+    (90, None, 36.5, 37.5, "Anxiety / Stress", 4),
+    (60, 100, 36.0, 37.5, "Normal", 0),
+]
+
+# Single-sensor rules, used only when exactly one of HR/Temp is missing.
+DECISION_RULES_TEMP_ONLY = [
+    # HR missing, Temp present
+    (36.5, 37.5, "Electrical System Issue", 5),
+]
+
+DECISION_RULES_HR_ONLY = [
+    # Temp missing, HR present
+    (60, 80, "Hypothyroidism", 6),
+    (100, None, "Shock / Sepsis", 7),
+]

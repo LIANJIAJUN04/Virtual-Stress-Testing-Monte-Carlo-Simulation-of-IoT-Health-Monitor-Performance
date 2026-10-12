@@ -1,0 +1,13 @@
+{
+  "alert_rate_controlled": 18.304259259259258,
+  "alert_rate_residential": 17.67185185185185,
+  "sensitivity_controlled": 0.10904198927960888,
+  "sensitivity_residential": 0.14062662678657392,
+  "specificity_controlled": 0.8210406531908977,
+  "specificity_residential": 0.8295331087820906,
+  "hr_complete_controlled": 97.99712962962963,
+  "hr_complete_residential": 95.98787037037037,
+  "p_value_alert": 0.7371784702843256,
+  "p_value_sensitivity": 0.3387902513084474,
+  "p_value_specificity": 0.6525417280506649
+}
