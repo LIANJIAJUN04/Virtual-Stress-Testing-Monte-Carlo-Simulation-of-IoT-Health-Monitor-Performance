@@ -19,6 +19,18 @@ This project builds a **virtual test bench** to answer that question. Instead of
 
 The logic being tested is an 8-condition rule set (e.g. bradycardia, tachycardia, hypothermia) taken from an earlier IoT healthcare prototype built with a Raspberry Pi, MAX30100 (heart rate / SpO₂) and DS18B20 (temperature) sensors.
 
+## The problem being solved
+
+The earlier prototype only demonstrated that the system **works**. It lacked:
+
+- **Quantitative validation**: no evidence of how reliable the rule logic is, or how often it raises false alarms or misses real events.
+- **Stress testing**: it was never tested under noisy, uncontrolled (home) conditions.
+- **A verified implementation**: it was unclear whether the logic in the simulation matched the logic on the real device.
+
+Collecting patient data was not feasible (ethics, time, hardware), so the research question became:
+
+> *How reliable and clinically valid is the same 8-condition rule-based logic when stressed under controlled versus home-like environments?*
+
 ## Method in brief
 
 1. **Simulate patients**: heart rate and temperature follow an Ornstein–Uhlenbeck (mean-reverting) process, with injected clinical events (such as bradycardia or tachycardia episodes).
@@ -74,6 +86,33 @@ python build_figures.py    # generate figures
 ```
 
 Simulation settings (number of runs, environments, noise levels, rules) are all in `config.py`.
+
+## Project highlights
+
+| # | Highlight | Detail |
+|---|---|---|
+| 1 | **Reproducible simulator** | Rebuilt the simulation pipeline from scratch; completed N = 1,000 runs (about 86.4 million records) |
+| 2 | **Dual detection metrics** | Reports per-second sensitivity alongside event-level detection, so detection ability is not understated |
+| 3 | **Rule-table audit** | Compared the simulator's rule table line by line against the original prototype source and found that 3 of the 8 rules had been silently altered from two-sensor to single-sensor conditions |
+| 4 | **Re-evaluation without re-simulation** | Restored the original rules and re-evaluated the stored output by post-processing, which reversed the headline results (see below) |
+| 5 | **Verified references** | Audited the bibliography and checked cited claims against their sources; final library of 86 entries |
+
+**Effect of the rule-table correction**
+
+| Metric | Altered rules | Faithful rules |
+|---|---|---|
+| Specificity | 99.83 – 99.96 % | **72.28 – 72.90 %** |
+| Precision | 61.57 – 87.84 % | **1.27 – 1.32 %** |
+| Alert rate | 0.31 – 0.43 % | **27.18 – 27.81 %** |
+
+Results that contradicted the earlier narrative were reported as found; no sensor-bias values were invented to make them look better.
+
+## Skills and methods demonstrated
+
+- Discrete-event and Monte Carlo simulation (Python, streaming analysis of 86.4M rows)
+- Statistical analysis: confidence intervals, significance tests, event-level vs. sample-level metrics
+- Root-cause analysis: reconciling code against source documents
+- Systematic literature verification and citation management (BibTeX)
 
 ## Limitations
 
