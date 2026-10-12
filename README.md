@@ -1,7 +1,7 @@
 # Virtual Stress Testing: Monte Carlo Simulation of IoT Health Monitor Performance
 
-**Author:** Lian Jia Jun (243UT246W5)
-**Supervisor:** Dr. Subarmaniam A/L Kannan
+**First Author:** Dr. Subarmaniam A/L Kannan  
+**Second Author:** Lian Jia Jun (243UT246W5)  
 **Institution:** Faculty of Information Science and Technology (FIST), Multimedia University (MMU), Melaka Campus
 
 ---
